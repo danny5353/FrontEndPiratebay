@@ -1,0 +1,21 @@
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./login.component.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+<body>
+    <form method="post" class="form-box animated fadeInUp" #loginForm=ngForm (ngSubmit)="onSubmit()">
+        <h1 class="form-title">Admin web site</h1>
+        <input type="text" name="u" placeholder="Username"  [(ngModel)]="form.username" required="required" />
+        <input type="password" name="p" placeholder="Password"  [(ngModel)]="form.password" required="required" />
+        <button type="submit">
+            ingresar
+        </button>
+    </form>
+</body>
+

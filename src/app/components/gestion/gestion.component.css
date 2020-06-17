@@ -1,0 +1,84 @@
+/*
+	Color fondo: #632432;
+	Color header: 246355;
+	Color borde: 0F362D;
+	Color iluminado: 369681;
+*/
+body {
+    margin:0;
+    background-image: url(../gestion/image/fond3.jpg);
+	  font-family: Arial;
+    min-height:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:Helvetica,Sans-serif;
+  }
+  a {
+    text-decoration:none;
+    color:#FFF;
+  }
+  .rainbow-button {
+    width:calc(15vw + 6px);
+    height:calc(5vw + 6px);
+    background-image: linear-gradient(90deg, blue 0%, white 49%, blue 80%, white 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size:2,5vw;
+    font-weight:bold;
+  }
+  .rainbow-button:after {
+    content:attr(alt);
+    width:20vw;
+    height:5vw;
+    background-color:#191919;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .rainbow-button:hover {
+    animation:slidebg 2s linear infinite;
+  }
+  
+  @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+#main-container{
+	margin: 150px auto;
+  width: auto;
+}
+#main-container2{
+	margin: 150px auto;
+  width: auto;
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: rgb(88, 79, 143);
+	border-bottom: solid 5px rgb(21, 15, 54);
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: rgb(161, 150, 219);
+	color: white;
+}
