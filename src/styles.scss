@@ -1,0 +1,275 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+$color-primary-gray: #545d7f;
+$color-primary-white: #fff;
+$color-primary-violet: #a7b9ff;
+$color-primary-blue: #5b7dff;
+$color-secondary-blue: #4964cc;
+$color-dark-blue: #2d3e7f;
+.form-border {
+  padding: 40px 25px 25px 25px;
+  border: 2px solid #efefef;
+  border-radius: 20px;
+  padding: 2rem 4rem;
+}
+.center {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bg {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba($color-primary-gray, 0.5),
+      rgba($color-primary-gray, 0.5)
+    ),
+    url("https://images.pexels.com/photos/1040159/pexels-photo-1040159.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.title {
+  margin: 30px 0;
+  color: $color-primary-white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.btn-primary {
+  background-color: $color-primary-blue;
+}
+form {
+  width: 100%;
+}
+
+.login-card {
+  //inputs
+  .mat-form-field {
+    .mat-input-element {
+      color: white !important;
+    }
+    .mat-form-field-label {
+      color: white !important;
+    }
+    .mat-form-field-required-marker {
+      color: white !important;
+    }
+  }
+
+  .mat-form-field.mat-focused {
+    .mat-form-field-label {
+      color: white !important;
+    }
+    .mat-form-field-required-marker {
+      color: white !important;
+    }
+    .mat-input-element {
+      color: white !important;
+    }
+  }
+
+  .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: white !important;
+  }
+
+  /* focused color */
+  .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: white !important;
+  }
+
+  /* floating label color */
+  .mat-form-field-appearance-outline.mat-focused .mat-form-field-label {
+    color: white !important;
+  }
+  input:focus {
+    background: none;
+  }
+  // input:-internal-autofill-selected {
+  //   background-color: red !important;
+  // }
+
+  // .mat-input-underline {
+  //   background-color: white !important;
+  // }
+}
+
+//#inputs
+.form-icon {
+  color: $color-primary-white;
+}
+.form__button-container {
+  display: flex;
+  justify-content: flex-end;
+  &--button {
+    background-color: $color-primary-blue !important;
+    color: $color-primary-white !important;
+  }
+}
+
+.form__button-container-table {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  &--button {
+    margin-left: 1rem !important;
+    background-color: $color-secondary-blue !important;
+    color: $color-primary-white !important;
+  }
+}
+//pages
+
+.bg-primary {
+  background-color: $color-dark-blue !important;
+}
+.navbar {
+  color: $color-primary-white;
+}
+.card {
+  box-shadow: 1px 2px 10px 0 $color-primary-gray !important;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  //border: 2.5px solid $color-dark-blue;
+  border-radius: 30px;
+  color: $color-dark-blue;
+  opacity: 0.55;
+  transition: 0.4s;
+  &:hover {
+    background-color: $color-secondary-blue;
+    color: $color-primary-white;
+    border: 0;
+    opacity: 0.6;
+  }
+  &__icon {
+    margin-top: 20px !important;
+    width: 80px !important;
+    height: 80px !important;
+    font-size: 80px !important;
+  }
+  &__title {
+    font-size: 20px;
+  }
+}
+h2 {
+  color: $color-secondary-blue;
+  font-size: 1.5rem;
+}
+h3 {
+  color: $color-secondary-blue;
+  font-size: 1rem;
+}
+hr {
+  border-top: 2px solid $color-secondary-blue;
+}
+table {
+  width: 100%;
+}
+.table {
+  &__title {
+    background-color: $color-secondary-blue;
+    color: $color-primary-white;
+  }
+}
+.dialog {
+  &__input {
+    width: 100%;
+  }
+  &__button {
+    &--negative {
+      background-color: $color-primary-gray !important;
+      color: $color-primary-white;
+    }
+    &--positive {
+      background-color: $color-primary-blue !important;
+      color: $color-primary-white;
+    }
+  }
+}
+.mat-tab-group.mat-primary .mat-ink-bar {
+  background-color: $color-primary-blue !important;
+}
+.angular-tabs {
+  .mat-tab-label {
+    color: $color-dark-blue !important;
+  }
+}
+th.mat-header-cell,
+td.mat-cell {
+  text-align: center !important;
+}
+
+//detalles de dialog pedido
+.dialog-pedido-detalle {
+  margin: 7.5px 0px;
+  box-shadow: 1px 2px 10px 0 $color-primary-gray !important;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 20px 30px;
+  &__cuerpo {
+    //background-color: orange;
+    display: flex;
+    &-icono {
+      margin-right: 30px;
+      margin-bottom: 10px;
+      background-color: $color-dark-blue;
+      border-radius: 10px;
+      display: flex;
+      color: $color-primary-white;
+      flex: 0 1 20%;
+      font-size: 36px;
+      justify-content: center;
+      align-items: center;
+    }
+    &-contenido {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      //background-color: red;
+      &-informacion {
+        margin: 5px 0px;
+        justify-content: space-between;
+        align-items: center;
+        //background-color: yellow;
+        display: flex;
+        &--subtitulo {
+          font-weight: bold;
+          color: $color-dark-blue;
+        }
+        &--text {
+          color: $color-dark-blue;
+        }
+      }
+    }
+  }
+  &__problema {
+    .example-form {
+      min-width: 150px;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .example-full-width {
+      width: 100%;
+    }
+    //background-color: red;
+  }
+}
+//-#detalle de dialog pedido

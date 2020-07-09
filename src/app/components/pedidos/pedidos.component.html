@@ -1,0 +1,149 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<ul class="nav nav-pills">
+        <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#Pendientes">Tabla de Pedidos Pendientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#PedidosPreparacion">Tabla de Pedidos en Preparacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#Preparados">Tabla de Pedidos Preparados</a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#Despachados">Tabla de Pedidos Despachados</a>
+                  </li>
+      </ul>
+    </nav>
+  <div class="tab-content">
+    <div class="tab-pane container active" id="Pendientes">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Numero Orden</th>
+                <th scope="col">Nombre Cliente</th>
+                <th scope="col">Fecha y Hora de Pago</th>
+                <th scope="col">Detalle Pedido</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <th scope="row">{{tableClient.order_Id}}</th>
+                  <td>{{tableClient.username}}</td>
+                  <td>{{tableClient.payday}}</td>
+                  <td><button type="button" class="btn btn-primary">Detalle</button></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td><button type="button" class="btn btn-primary">Detalle</button></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td><button type="button" class="btn btn-primary">Detalle</button></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="tab-pane container fade" id="PedidosPreparacion">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Numero Orden</th>
+                <th scope="col">Nombre Cliente</th>
+                <th scope="col">Fecha y hora de pedido solicitad</th>
+                <th scope="col">Detalle Pedido</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td><button type="button" class="btn btn-primary">Detalle</button></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td><button type="button" class="btn btn-primary">Detalle</button></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td><button type="button" class="btn btn-primary">Detalle</button></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="tab-pane container fade" id="Preparados">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Numero Orden</th>
+                <th scope="col">Nombre Cliente</th>
+                <th scope="col">Fecha y hora de Preparacion</th>
+                <th scope="col">Detalle Pedido</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td><button type="button" class="btn btn-primary">Detalle</button></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td><button type="button" class="btn btn-primary">Detalle</button></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td><button type="button" class="btn btn-primary">Detalle</button></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="tab-pane container fade" id="Despachados">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Numero Orden</th>
+                <th scope="col">Nombre Cliente</th>
+                <th scope="col">Fecha y hora que de Despacho</th>
+                <th scope="col">Detalle Pedido</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td><button type="button" class="btn btn-primary">Detalle</button></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td><button type="button" class="btn btn-primary">Detalle</button></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td><button type="button" class="btn btn-primary">Detalle</button></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    </div>
+    <div class="text-center"> 
+            <button routerLink="/main" type="button" class="btn btn-lg btn-primary">Salir</button>
+    </div>

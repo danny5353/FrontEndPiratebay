@@ -1,14 +1,20 @@
+
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from 'src/app/services/auth.service';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 import { user } from '../Inteface/user';
+import { tableClient } from '../Inteface/tableClient';
 
 @Component({
-  selector: 'app-gestion',
-  templateUrl: './gestion.component.html',
-  styleUrls: ['./gestion.component.css']
+  selector: 'app-pedidos',
+  templateUrl: './pedidos.component.html',
+  styleUrls: ['./pedidos.component.scss']
 })
-export class GestionComponent implements OnInit {
+export class PedidosComponent implements OnInit {
+  tableClient : tableClient[];
+  order_Id:number;
+  username:string;
+  payday:string;
   token = null;
   refresh =null;
   users : user[];

@@ -8,6 +8,8 @@ import { LoginComponent } from './components/login/login.component';
 import { MainComponent } from './components/main/main.component';
 import { HttpClient } from '@angular/common/http';
 import { GestionComponent } from './components/gestion/gestion.component';
+import { PedidosComponent } from './components/pedidos/pedidos.component';
+import { Pedidos2Component } from './components/pedidos2/pedidos2.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { GestionComponent } from './components/gestion/gestion.component';
     LoginComponent,
     MainComponent,
     GestionComponent,
+    PedidosComponent,
+    Pedidos2Component,
   ],
   imports: [
   BrowserModule,

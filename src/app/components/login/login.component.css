@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 150px;
     font-family: sans-serif;
-    background-image: url(../login/image/fond4.jpg);
+    background-image: url(../login/image/fond6.jpg);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -17,8 +17,8 @@ body {
 }
 
 .form-box {
-    width: 300px;
-    padding: 40px;
+    width: 450px;
+    padding: 45px;
     background: #191919;
     text-align: center;
 }
